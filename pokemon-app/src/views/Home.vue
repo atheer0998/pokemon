@@ -1,5 +1,5 @@
-<template>
-<div>
+ <template>
+ <div>
 <div class="w-full flex justify-center">
 <input placeholder="Enter Pokemon here" type="text" 
     class="mt-10 p-2 border-blue-500 border-2" v-model="text" />
@@ -19,7 +19,7 @@
       </router-link>
     </div>
   </div>
-</div>
+  </div>
 </template>
 
 <script>
