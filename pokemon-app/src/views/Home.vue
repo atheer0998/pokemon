@@ -10,7 +10,7 @@
 
     
     <div
-      class="ml-4 text-2xl text-blue-400"
+      class="ml-4 text-2xl text-blue-500"
       v-for="(pokemon, idx) in filteredPokemon"
       :key="idx"
     >
@@ -39,7 +39,7 @@ export default {
         console.log(data);
         state.pokemons = data.results;
         state.urlIdLookup = data.results.reduce((acc, cur, idx)=> 
-           acc = {...acc, [cur.name]:idx+1 }
+           acc = {...acc, [cur.name]:idx+1}
         ,{})
         console.log('url',state.urlIdLookup+1)
         
